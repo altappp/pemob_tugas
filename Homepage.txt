@@ -1,0 +1,816 @@
+import * as React from "react";
+import { Text, StyleSheet, View, Image } from "react-native";
+
+const Homepage = () => {
+  return (
+    <View style={styles.homepage}>
+      <View style={styles.buttonOutlineText}>
+        <Text style={styles.buttonName}>Lihat lainnya</Text>
+      </View>
+      <Text style={styles.destinasiWisata}>Destinasi Wisata</Text>
+      <View style={styles.jlBraga}>
+        <Image
+          style={styles.frameIcon}
+          resizeMode="cover"
+          source={require("../assets/frame-4.png")}
+        />
+        <Text style={styles.jalanBraga}>Jalan Braga</Text>
+        <Text style={styles.salahSatuMaskotDanObjekWi}>
+          <Text
+            style={styles.salahSatuMaskot}
+          >{`Salah satu maskot dan objek wisata kota Bandung yang dahulu dikenal sebagai `}</Text>
+          <Text style={styles.parijsVanJava}>Parijs van Java.</Text>
+        </Text>
+      </View>
+      <View style={styles.angklungUjo}>
+        <Image
+          style={styles.frameIcon1}
+          resizeMode="cover"
+          source={require("../assets/frame-41.png")}
+        />
+        <Text style={styles.saungAngklungUdjo}>Saung Angklung Udjo</Text>
+        <Text style={styles.suatuTempatYangMerupakanTe}>
+          Suatu tempat yang merupakan tempat pertunjukan, pusat kerajinan tangan
+          dari bambu, dan workshop instrumen musik dari bambu.
+        </Text>
+      </View>
+      <View style={styles.kawahPutih1}>
+        <Image
+          style={styles.frameIcon2}
+          resizeMode="cover"
+          source={require("../assets/frame-42.png")}
+        />
+        <Text style={styles.kawahPutih}>Kawah Putih</Text>
+        <Text style={styles.kawahPutihMerupakanSebuahD}>
+          Kawah putih merupakan sebuah danau yang terbentuk dari letusan Gunung
+          Patuha.
+        </Text>
+      </View>
+      <View style={styles.gdSate}>
+        <Image
+          style={styles.gdSateIcon}
+          resizeMode="cover"
+          source={require("../assets/gd-sate.png")}
+        />
+        <Text style={styles.gedungKantorGubernurJawaBa}>
+          <Text
+            style={styles.gedungKantorGubernur}
+          >{`Gedung kantor Gubernur Jawa Barat. `}</Text>
+          <Text style={styles.gedungIniMemiliki}>
+            Gedung ini memiliki ciri khas berupa ornamen tusuk sate pada menara
+            sentralnya.
+          </Text>
+        </Text>
+        <Text style={styles.gedungSate}>Gedung Sate</Text>
+      </View>
+      <View style={styles.frameView4}>
+        <View style={styles.buttonOutlineText1}>
+          <Text style={styles.buttonName1}>Lainnya</Text>
+        </View>
+        <View style={styles.frameView1}>
+          <Image
+            style={styles.rectangleIcon}
+            resizeMode="cover"
+            source={require("../assets/rectangle-3.png")}
+          />
+          <View style={[styles.frameView, styles.ml16]}>
+            <Text style={styles.polisiPulangkan29Mahasiswa}>
+              Polisi Pulangkan 29 Mahasiswa yang Ricuh Saat Tolak KUHP di
+              Bandung
+            </Text>
+            <Text style={[styles.desember2022, styles.mt4]}>
+              16 Desember 2022
+            </Text>
+            <Text style={[styles.ketuaKONIBeltimKamarudinMe, styles.mt4]}>
+              Ketua KONI Beltim Kamarudin mengucapkan selamat atas pelantikan
+              pengurus PERTINA ...
+            </Text>
+          </View>
+        </View>
+        <View style={styles.frameView3}>
+          <Image
+            style={styles.rectangleIcon1}
+            resizeMode="cover"
+            source={require("../assets/rectangle-31.png")}
+          />
+          <View style={[styles.frameView2, styles.ml16]}>
+            <Text style={styles.atasiBanjirPemkotBandungB}>
+              Atasi Banjir, Pemkot Bandung Bangun 2 Rumah Pompa Tahun Depan
+            </Text>
+            <Text style={[styles.desember20221, styles.mt4]}>
+              15 Desember 2022
+            </Text>
+            <Text style={[styles.ketuaKONIBeltimKamarudinMe1, styles.mt4]}>
+              Ketua KONI Beltim Kamarudin mengucapkan selamat atas pelantikan
+              pengurus PERTINA ...
+            </Text>
+          </View>
+        </View>
+        <Text style={styles.informasiDanBerita}>Informasi dan Berita</Text>
+      </View>
+      <View style={styles.frameView6}>
+        <View style={styles.rectangleView} />
+        <View style={styles.frameView5}>
+          <Text style={styles.cari}>Cari</Text>
+          <Image
+            style={styles.interfaceEssentialMagnifier}
+            resizeMode="cover"
+            source={require("../assets/interface-essentialmagnifier.png")}
+          />
+        </View>
+        <View style={styles.statusbar}>
+          <Image
+            style={styles.devicesBatteryFullIcon}
+            resizeMode="cover"
+            source={require("../assets/devicesbatteryfull.png")}
+          />
+          <Image
+            style={styles.interfaceEssentialWiFiIcon}
+            resizeMode="cover"
+            source={require("../assets/interface-essentialwifi.png")}
+          />
+          <Image
+            style={styles.interfaceEssentialWiFiIcon1}
+            resizeMode="cover"
+            source={require("../assets/interface-essentialwifi.png")}
+          />
+          <Text style={styles.text}>80%</Text>
+          <Text style={styles.g}>4G</Text>
+          <Text style={styles.aM}>10:00 AM</Text>
+        </View>
+      </View>
+      <View style={styles.navbarBottom}>
+        <View style={styles.navIcon}>
+          <Image
+            style={styles.iconHome}
+            resizeMode="cover"
+            source={require("../assets/icon-home.png")}
+          />
+          <Image
+            style={styles.ellipseIcon}
+            resizeMode="cover"
+            source={require("../assets/ellipse-1.png")}
+          />
+          <Text style={styles.beranda}>Beranda</Text>
+        </View>
+        <View style={styles.navIcon1}>
+          <Image
+            style={styles.iconExplore}
+            resizeMode="cover"
+            source={require("../assets/icon-explore.png")}
+          />
+          <Image
+            style={styles.ellipseIcon1}
+            resizeMode="cover"
+            source={require("../assets/ellipse-11.png")}
+          />
+          <Text style={styles.beranda1}>Destinasi</Text>
+        </View>
+        <View style={styles.navIcon2}>
+          <Image
+            style={styles.iconNews}
+            resizeMode="cover"
+            source={require("../assets/icon-news.png")}
+          />
+          <Image
+            style={styles.ellipseIcon2}
+            resizeMode="cover"
+            source={require("../assets/ellipse-11.png")}
+          />
+          <Text style={styles.beranda2}>Informasi</Text>
+        </View>
+        <View style={styles.navIcon3}>
+          <Image
+            style={styles.iconMore}
+            resizeMode="cover"
+            source={require("../assets/icon-more.png")}
+          />
+          <Image
+            style={styles.ellipseIcon3}
+            resizeMode="cover"
+            source={require("../assets/ellipse-11.png")}
+          />
+          <Text style={styles.beranda3}>Lainnya</Text>
+        </View>
+      </View>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  mt4: {
+    marginTop: 4,
+  },
+  ml16: {
+    marginLeft: 16,
+  },
+  buttonName: {
+    position: "relative",
+    fontSize: 14,
+    fontWeight: "500",
+    fontFamily: "Poppins",
+    color: "#0085cc",
+    textAlign: "center",
+  },
+  buttonOutlineText: {
+    position: "absolute",
+    top: 1240,
+    left: 17,
+    borderRadius: 12,
+    width: 326,
+    height: 48,
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  destinasiWisata: {
+    position: "absolute",
+    top: 444,
+    left: 17,
+    fontSize: 20,
+    letterSpacing: 0,
+    fontWeight: "500",
+    fontFamily: "Poppins",
+    color: "#000",
+    textAlign: "center",
+    width: 326,
+  },
+  frameIcon: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    borderRadius: 10,
+    width: 300,
+    height: 157,
+    overflow: "hidden",
+  },
+  jalanBraga: {
+    position: "absolute",
+    marginLeft: -44,
+    top: "67.78%",
+    left: "50%",
+    fontSize: 14,
+    lineHeight: 18,
+    fontWeight: "500",
+    fontFamily: "Poppins",
+    color: "#000",
+    textAlign: "left",
+    width: 88,
+  },
+  salahSatuMaskot: {
+    fontWeight: "500",
+    fontFamily: "Poppins",
+  },
+  parijsVanJava: {
+    fontStyle: "italic",
+    fontWeight: "500",
+    fontFamily: "Poppins",
+  },
+  salahSatuMaskotDanObjekWi: {
+    position: "absolute",
+    top: 185,
+    left: 14,
+    fontSize: 10,
+    lineHeight: 18,
+    color: "rgba(0, 0, 0, 0.7)",
+    textAlign: "center",
+    width: 272,
+  },
+  jlBraga: {
+    position: "absolute",
+    top: 484,
+    left: 30,
+    width: 300,
+    height: 239,
+  },
+  frameIcon1: {
+    position: "absolute",
+    top: 23,
+    left: 0,
+    borderRadius: 10,
+    width: 300,
+    height: 157,
+    overflow: "hidden",
+  },
+  saungAngklungUdjo: {
+    position: "absolute",
+    marginLeft: -77,
+    top: "0%",
+    left: "50%",
+    fontSize: 14,
+    lineHeight: 18,
+    fontWeight: "500",
+    fontFamily: "Poppins",
+    color: "#000",
+    textAlign: "left",
+    width: 154,
+  },
+  suatuTempatYangMerupakanTe: {
+    position: "absolute",
+    top: 185,
+    left: 14,
+    fontSize: 10,
+    lineHeight: 18,
+    fontWeight: "500",
+    fontFamily: "Poppins",
+    color: "rgba(0, 0, 0, 0.7)",
+    textAlign: "center",
+    width: 272,
+  },
+  angklungUjo: {
+    position: "absolute",
+    top: 748,
+    left: 30,
+    width: 300,
+    height: 239,
+  },
+  frameIcon2: {
+    position: "absolute",
+    top: 23,
+    left: 0,
+    borderRadius: 10,
+    width: 300,
+    height: 157,
+    overflow: "hidden",
+  },
+  kawahPutih: {
+    position: "absolute",
+    marginLeft: -46,
+    top: "0%",
+    left: "50%",
+    fontSize: 14,
+    lineHeight: 18,
+    fontWeight: "500",
+    fontFamily: "Poppins",
+    color: "#000",
+    textAlign: "left",
+    width: 92,
+  },
+  kawahPutihMerupakanSebuahD: {
+    position: "absolute",
+    top: 185,
+    left: 14,
+    fontSize: 10,
+    lineHeight: 18,
+    fontWeight: "500",
+    fontFamily: "Poppins",
+    color: "rgba(0, 0, 0, 0.7)",
+    textAlign: "center",
+    width: 272,
+  },
+  kawahPutih1: {
+    position: "absolute",
+    top: 1012,
+    left: 30,
+    width: 300,
+    height: 239,
+  },
+  gdSateIcon: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: 360,
+    height: 234,
+  },
+  gedungKantorGubernur: {
+    marginBlockStart: 0,
+    marginBlockEnd: 0,
+  },
+  gedungIniMemiliki: {
+    margin: 0,
+  },
+  gedungKantorGubernurJawaBa: {
+    position: "absolute",
+    top: 243,
+    left: 13,
+    fontSize: 10,
+    letterSpacing: 0,
+    fontWeight: "500",
+    fontFamily: "Poppins",
+    color: "rgba(0, 0, 0, 0.7)",
+    textAlign: "center",
+    width: 333,
+  },
+  gedungSate: {
+    position: "absolute",
+    top: 6,
+    left: 13,
+    fontSize: 24,
+    lineHeight: 31,
+    fontWeight: "500",
+    fontFamily: "Poppins",
+    color: "#000",
+    textAlign: "left",
+    width: 167,
+    height: 35,
+  },
+  gdSate: {
+    position: "absolute",
+    top: 113,
+    left: 0,
+    width: 360,
+    height: 234,
+  },
+  buttonName1: {
+    position: "relative",
+    fontSize: 14,
+    fontWeight: "500",
+    fontFamily: "Poppins",
+    color: "#0085cc",
+    textAlign: "center",
+  },
+  buttonOutlineText1: {
+    position: "absolute",
+    top: 222,
+    left: 8,
+    borderRadius: 12,
+    width: 326,
+    height: 48,
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  rectangleIcon: {
+    position: "relative",
+    borderRadius: 12,
+    width: 80,
+    height: 85,
+    flexShrink: 0,
+  },
+  polisiPulangkan29Mahasiswa: {
+    position: "relative",
+    fontSize: 16,
+    lineHeight: 21,
+    fontFamily: "Poppins",
+    color: "#1f2937",
+    textAlign: "left",
+    width: 246,
+  },
+  desember2022: {
+    position: "relative",
+    fontSize: 12,
+    fontFamily: "Poppins",
+    color: "#9096a0",
+    textAlign: "left",
+    width: 246,
+  },
+  ketuaKONIBeltimKamarudinMe: {
+    position: "relative",
+    fontSize: 12,
+    lineHeight: 16,
+    fontFamily: "Roboto",
+    color: "#1f2937",
+    textAlign: "left",
+    width: 246,
+    display: "none",
+  },
+  frameView: {
+    flexDirection: "column",
+    alignItems: "flex-start",
+    justifyContent: "flex-start",
+  },
+  frameView1: {
+    position: "absolute",
+    top: 41,
+    left: 0,
+    flexDirection: "row",
+    alignItems: "flex-start",
+    justifyContent: "flex-start",
+  },
+  rectangleIcon1: {
+    position: "relative",
+    borderRadius: 12,
+    width: 80,
+    height: 85,
+    flexShrink: 0,
+  },
+  atasiBanjirPemkotBandungB: {
+    position: "relative",
+    fontSize: 16,
+    lineHeight: 21,
+    fontFamily: "Poppins",
+    color: "#1f2937",
+    textAlign: "left",
+    width: 246,
+  },
+  desember20221: {
+    position: "relative",
+    fontSize: 12,
+    fontFamily: "Poppins",
+    color: "#9096a0",
+    textAlign: "left",
+  },
+  ketuaKONIBeltimKamarudinMe1: {
+    position: "relative",
+    fontSize: 12,
+    lineHeight: 16,
+    fontFamily: "Roboto",
+    color: "#1f2937",
+    textAlign: "left",
+    width: 246,
+    display: "none",
+  },
+  frameView2: {
+    flexDirection: "column",
+    alignItems: "flex-start",
+    justifyContent: "flex-start",
+  },
+  frameView3: {
+    position: "absolute",
+    top: 137,
+    left: 0,
+    flexDirection: "row",
+    alignItems: "flex-start",
+    justifyContent: "flex-start",
+  },
+  informasiDanBerita: {
+    position: "absolute",
+    top: 0,
+    left: 8,
+    fontSize: 20,
+    letterSpacing: 0,
+    fontWeight: "500",
+    fontFamily: "Poppins",
+    color: "#4b5563",
+    textAlign: "center",
+    width: 326,
+  },
+  frameView4: {
+    position: "absolute",
+    top: 1313,
+    left: 9,
+    width: 342,
+    height: 270,
+  },
+  rectangleView: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    backgroundColor: "#fff",
+    width: 360,
+    height: 94,
+  },
+  cari: {
+    position: "absolute",
+    top: 13,
+    left: 48,
+    fontSize: 12,
+    fontFamily: "Roboto",
+    color: "#9096a0",
+    textAlign: "left",
+  },
+  interfaceEssentialMagnifier: {
+    position: "absolute",
+    height: "60%",
+    width: "7.43%",
+    top: "20%",
+    right: "88.24%",
+    bottom: "20%",
+    left: "4.33%",
+    maxWidth: "100%",
+    overflow: "hidden",
+    maxHeight: "100%",
+  },
+  frameView5: {
+    position: "absolute",
+    top: 45,
+    left: 17,
+    borderRadius: 30,
+    borderStyle: "solid",
+    borderColor: "#000",
+    borderWidth: 1,
+    width: 323,
+    height: 40,
+  },
+  devicesBatteryFullIcon: {
+    position: "absolute",
+    width: "6.67%",
+    top: 0,
+    right: "4.72%",
+    left: "88.61%",
+    maxWidth: "100%",
+    overflow: "hidden",
+    height: 24,
+  },
+  interfaceEssentialWiFiIcon: {
+    position: "absolute",
+    width: "5.56%",
+    top: 2,
+    right: "23.06%",
+    left: "71.39%",
+    maxWidth: "100%",
+    overflow: "hidden",
+    height: 20,
+  },
+  interfaceEssentialWiFiIcon1: {
+    position: "absolute",
+    width: "5.56%",
+    top: 2,
+    right: "29.17%",
+    left: "65.28%",
+    maxWidth: "100%",
+    overflow: "hidden",
+    height: 20,
+  },
+  text: {
+    position: "absolute",
+    top: 3,
+    left: 290,
+    fontSize: 12,
+    fontFamily: "Poppins",
+    color: "#4b5563",
+    textAlign: "left",
+  },
+  g: {
+    position: "absolute",
+    top: 6,
+    left: 216,
+    fontSize: 12,
+    fontFamily: "Poppins",
+    color: "#4b5563",
+    textAlign: "left",
+  },
+  aM: {
+    position: "absolute",
+    top: 3,
+    left: 17,
+    fontSize: 12,
+    fontWeight: "500",
+    fontFamily: "Poppins",
+    color: "#4b5563",
+    textAlign: "left",
+  },
+  statusbar: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    backgroundColor: "#fff",
+    width: 360,
+    height: 24,
+    overflow: "hidden",
+  },
+  frameView6: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: 360,
+    height: 85,
+  },
+  iconHome: {
+    position: "relative",
+    width: 24,
+    height: 24,
+    flexShrink: 0,
+  },
+  ellipseIcon: {
+    position: "relative",
+    width: 4,
+    height: 4,
+    flexShrink: 0,
+    display: "none",
+  },
+  beranda: {
+    position: "relative",
+    fontSize: 11,
+    fontWeight: "500",
+    fontFamily: "Poppins",
+    color: "#0085cc",
+    textAlign: "center",
+  },
+  navIcon: {
+    backgroundColor: "#fff",
+    width: 90,
+    height: 56,
+    flexShrink: 0,
+    flexDirection: "column",
+    paddingHorizontal: 0,
+    paddingBottom: 6,
+    alignItems: "center",
+    justifyContent: "flex-end",
+  },
+  iconExplore: {
+    position: "relative",
+    width: 24,
+    height: 24,
+    flexShrink: 0,
+  },
+  ellipseIcon1: {
+    position: "relative",
+    width: 4,
+    height: 4,
+    flexShrink: 0,
+    display: "none",
+  },
+  beranda1: {
+    position: "relative",
+    fontSize: 11,
+    fontWeight: "500",
+    fontFamily: "Poppins",
+    color: "#9096a0",
+    textAlign: "center",
+  },
+  navIcon1: {
+    backgroundColor: "#fff",
+    width: 90,
+    height: 56,
+    flexShrink: 0,
+    flexDirection: "column",
+    paddingHorizontal: 0,
+    paddingBottom: 6,
+    alignItems: "center",
+    justifyContent: "flex-end",
+  },
+  iconNews: {
+    position: "relative",
+    width: 24,
+    height: 24,
+    flexShrink: 0,
+  },
+  ellipseIcon2: {
+    position: "relative",
+    width: 4,
+    height: 4,
+    flexShrink: 0,
+    display: "none",
+  },
+  beranda2: {
+    position: "relative",
+    fontSize: 11,
+    fontWeight: "500",
+    fontFamily: "Poppins",
+    color: "#9096a0",
+    textAlign: "center",
+  },
+  navIcon2: {
+    backgroundColor: "#fff",
+    width: 90,
+    height: 56,
+    flexShrink: 0,
+    flexDirection: "column",
+    paddingHorizontal: 0,
+    paddingBottom: 6,
+    alignItems: "center",
+    justifyContent: "flex-end",
+  },
+  iconMore: {
+    position: "relative",
+    width: 24,
+    height: 24,
+    flexShrink: 0,
+  },
+  ellipseIcon3: {
+    position: "relative",
+    width: 4,
+    height: 4,
+    flexShrink: 0,
+    display: "none",
+  },
+  beranda3: {
+    position: "relative",
+    fontSize: 11,
+    fontWeight: "500",
+    fontFamily: "Poppins",
+    color: "#9096a0",
+    textAlign: "center",
+  },
+  navIcon3: {
+    backgroundColor: "#fff",
+    width: 90,
+    height: 56,
+    flexShrink: 0,
+    flexDirection: "column",
+    paddingHorizontal: 0,
+    paddingBottom: 6,
+    alignItems: "center",
+    justifyContent: "flex-end",
+  },
+  navbarBottom: {
+    position: "absolute",
+    bottom: 0,
+    left: 0,
+    backgroundColor: "#fff",
+    shadowColor: "rgba(0, 0, 0, 0.25)",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowRadius: 8,
+    elevation: 8,
+    shadowOpacity: 1,
+    width: 360,
+    height: 57,
+    flexDirection: "row",
+    alignItems: "flex-end",
+    justifyContent: "center",
+  },
+  homepage: {
+    position: "relative",
+    backgroundColor: "#fff",
+    flex: 1,
+    width: "100%",
+    height: 1629,
+    overflow: "hidden",
+  },
+});
+
+export default Homepage;

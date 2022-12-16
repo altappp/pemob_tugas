@@ -1,0 +1,98 @@
+import * as React from "react";
+import { Image, StyleSheet, View, Text } from "react-native";
+
+const LogIn = () => {
+  return (
+    <View style={styles.logIn}>
+      <View style={styles.logoBandungTourism1}>
+        <Image
+          style={styles.logoBandungTourism}
+          resizeMode="cover"
+          source={require("../assets/logo-bandung-tourism.png")}
+        />
+      </View>
+      <View style={styles.rectangleView} />
+      <View style={styles.rectangleView1} />
+      <Text style={styles.login}>login</Text>
+      <Text style={styles.login1}>sign up</Text>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  logoBandungTourism: {
+    position: "absolute",
+    height: "100%",
+    width: "100%",
+    top: "0%",
+    right: "0%",
+    bottom: "0%",
+    left: "0%",
+    maxWidth: "100%",
+    overflow: "hidden",
+    maxHeight: "100%",
+  },
+  logoBandungTourism1: {
+    position: "absolute",
+    top: 45,
+    left: 32,
+    width: 297,
+    height: 173,
+  },
+  rectangleView: {
+    position: "absolute",
+    top: 461,
+    left: 107,
+    borderRadius: 35,
+    backgroundColor: "#fff",
+    borderStyle: "solid",
+    borderColor: "rgba(0, 0, 0, 0.5)",
+    borderWidth: 1,
+    width: 153,
+    height: 40,
+  },
+  rectangleView1: {
+    position: "absolute",
+    top: 516,
+    left: 107,
+    borderRadius: 35,
+    backgroundColor: "#fff",
+    borderStyle: "solid",
+    borderColor: "rgba(0, 0, 0, 0.5)",
+    borderWidth: 1,
+    width: 153,
+    height: 40,
+  },
+  login: {
+    position: "absolute",
+    top: 461,
+    left: 149,
+    fontSize: 30,
+    fontFamily: "Roboto",
+    color: "#9096a0",
+    textAlign: "left",
+    width: 69,
+    height: 31,
+  },
+  login1: {
+    position: "absolute",
+    top: 516,
+    left: 134,
+    fontSize: 30,
+    fontFamily: "Roboto",
+    color: "#9096a0",
+    textAlign: "left",
+    width: 111,
+    height: 31,
+  },
+  logIn: {
+    position: "relative",
+    backgroundColor: "#fff",
+    flex: 1,
+    width: "100%",
+    height: 640,
+    overflow: "hidden",
+  },
+});
+
+export default LogIn;
